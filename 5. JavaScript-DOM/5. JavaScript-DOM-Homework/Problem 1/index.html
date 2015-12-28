@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Webinar registration form</title>
+
+    <style>
+        #wrapper {
+            margin: 0 auto;
+            width: 400px;
+            background-color: pink;
+        }
+
+        #name, #address, #city, #post-code, #email, #phone, #date,
+        #mol, #firm, #eik, #dds, #addres {
+            width: 380px;
+        }
+
+        span {
+            color: red;
+        }
+
+        #divToShow {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <h1>Регистрация на уебинар</h1>
+    <label for="name">Име и фамилия:<span>*</span></label>
+    <input type="text" id="name"/>
+    <label for="address">Адрес:</label>
+    <input type="text" id="address"/>
+    <label for="city">Населено място:</label>
+    <input type="text" id="city"/>
+    <label for="post-code">Пощенски код:</label>
+    <input type="text" id="post-code"/>
+    <label for="email">Email:<span>*</span></label>
+    <input type="text" id="email"/>
+    <label for="phone">Телефон:<span>*</span></label>
+    <input type="text" id="phone"/>
+    <label for="date">Дата на семинара:<span>*</span></label>
+    <input type="date" id="date"/>
+    <input type="checkbox" id="checkBox" name="name" value=" " onclick="toggleSub(this, 'divToShow');" />Желая фактура
+    <div id="divToShow">
+        <label for="firm">Фирма/Организация:<span>*</span></label>
+        <input type="text" id="firm"/>
+        <label for="mol">МОЛ:<span>*</span></label>
+        <input type="text" id="mol"/>
+        <label for="eik">ЕИК:<span>*</span></label>
+        <input type="text" id="eik"/>
+        <label for="dds">ИН по ДДС:<span>*</span></label>
+        <input type="text" id="dds"/>
+        <label for="addres">Адрес:<span>*</span></label>
+        <input type="text" id="addres"/>
+    </div>
+    <input type="submit" value="Регистрирай се"/>
+    <input type="reset" value="Изчисти"/>
+</div>
+<script src="Webinar%20registration%20form.js">
+</script>
+</body>
+</html>
